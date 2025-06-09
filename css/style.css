@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*estilos de buscado*/
+
+#body{
+
+    font-family: "Poppins", sans-serif;
+
+}
+
+/**SECCCION HEADER*/
+#menu{
+background-color: aliceblue;
+}
+.menu-principal{
+
+  height: 10vh;
+  background-color: aliceblue;
+   text-align: center;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+.sub-menu-principal{
+
+  background-color: aliceblue;
+  padding-bottom: 20px;
+}
+.inicio-casa{
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  transition: all 300ms;
+  border-radius: 6px;
+
+}
+.inicio-casa:hover{
+  background-color: rgb(205, 205, 205);
+}
+
+.inicio-casa a{
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  color: white;
+}
+.inicio-casa a svg{
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  
+  margin-right: 5px;
+}
+
+.contenedor-header-mensaje{
+
+  background-color: #282828;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+
+
+.container-baner1-baner2{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 60vh;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  align-items: center;
+ 
+
+}
+
+.container1-banner{
+  display: flex;
+  width: 50%;  
+}
+.container2-banner{
+  display: flex;
+  width: 50%;  
+}
+.container1-banner div div span{
+  font-size: 15px;
+}
+
+.container1-banner div img{
+  width: 100%; 
+}
+
+.container2-banner div{
+   justify-content: center;
+  justify-self: center;
+  margin: auto;
+  justify-items: center;
+  align-items: center;
+}
+  
+
+.container2-banner div img{
+  width: 100%;
+}
+
+.container2-banner div div h6{
+  color: rgb(110, 110, 110);
+  margin-bottom: 10px;
+  
+}
+
+.card-img{
+   opacity: 1;
+   transition: all 300ms;
+   z-index: 999;
+   cursor: pointer;
+   margin: 10px;
+}
+.card-img2{
+   opacity: 1;
+   transition: all 300ms;
+   z-index: 999;
+   cursor: pointer;
+   margin: 10px;
+}
+.card-img:hover{
+  opacity: 0;
+}
+.card-img2:hover{
+  opacity: 0;
+}
+.card-imghover{
+   opacity: 0;
+   position: absolute;
+   top: 0px;
+   transition: all 300ms;
+   z-index: 1999;
+   background-color: white;
+   cursor: pointer;
+   margin: 10px;
+}
+.card-imghover2{
+   opacity: 0;
+   position: absolute;
+   top: 0px;
+   transition: all 300ms;
+   z-index: 1999;
+   background-color: white;
+   cursor: pointer;
+   margin: 10px;
+}
+.card-imghover:hover{
+  opacity:1 ;
+}
+.card-imghover2:hover{
+  opacity:1 ;
+}
+
+
+
+/**FIN SECCCION HEADER*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.seccion-formulario{
+background-color: aliceblue;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+.contenedor-texto-arriba{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  height: 55vh;
+  background-image: url("../img/1.jpg") ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+/**
+.contenedor-img-persona{
+  position: fixed;
+  top: 20px;
+  left: 100px;
+  width: 200px;
+}**/
+.contenedor-principal-formulario{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  padding: 0px;
+
+}
+
+@media (max-width: 720px) {
+  .contenedor-principal-formulario iframe{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .contenedor-texto-arriba{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    height: 55vh;
+    background-image: url("../img/2.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .contenedor-header-mensaje{
+   display: none;
+  }
+  .container1-banner div div span{
+     font-size: 15px;
+     line-height: 1px;
+   }
+   .container-baner1-baner2{
+     height: 100vh;
+    }
+    .container1-banner{
+    display: flex;
+    flex-direction: column;     
+    }
+
+ 
+}
+    @media (max-width: 993px) {
+          .container2-banner{
+            display: none;
+          }
+          .container1-banner{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            margin: auto;  
+            justify-content: center;
+            justify-self: center;
+            justify-items: center;
+            align-items: center;
+           }
+
+}
+
+
+.seccion-modal-votantes{
+  justify-content: center;
+  text-align: center;
+}
+.boton-ingresar-votantes{
+  background-color: antiquewhite;
+  color: #000;
+  text-decoration: 1px solid black;
+
+}
+
+.whatsapp{
+  position: fixed;
+  right: 4px;
+  text-align: center;
+  margin-right: 20px;
+}
+.whatsapp:hover{
+  opacity: 0.9;
+  transform: scale(1.1)
+}
+.whatsapp div img{
+  width: 50px;
+  height: 50px;
+}
+.contenedor-preguntas{
+  right: 4px;
+  color: rgb(4, 139, 28) ;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 5px;
+}
